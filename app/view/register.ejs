@@ -2,6 +2,12 @@
 <div class="container mt-5">
 
   <h1>Créer un compte</h1>
+  
+  <% if (error !== null) { %>
+  <div class="alert alert-danger" role="alert">
+    <%= error %>
+  </div>
+  <% } %>
 
   <form action="/register" method="POST">
     <div class="mb-3">
